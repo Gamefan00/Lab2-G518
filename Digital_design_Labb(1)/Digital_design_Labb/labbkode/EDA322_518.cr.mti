@@ -1,0 +1,113 @@
+C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package chacc_pkg
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mux2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mux2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package chacc_pkg
+-- Compiling entity proc_bus
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rca
+-- Compiling architecture Dataflow of rca
+-- Loading entity fa
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture Dataflow of fa
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package chacc_pkg
+-- Compiling entity proc_controller
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_testbench.vhd {1 {vcom -work work -2008 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_testbench.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package chacc_pkg
+-- Compiling entity alu_testbench
+-- Compiling architecture BEHAVIORAL of alu_testbench
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rotateleft.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rotateleft.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rotateleft
+-- Compiling architecture Dataflow of rotateleft
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_wRCA.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\alu_wRCA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Compiling entity alu_wRCA
+-- Compiling architecture Dataflow of alu_wRCA
+-- Loading entity rca
+-- Loading entity cmp
+-- Loading entity rotateleft
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/EDA322_processor.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/EDA322_processor.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity EDA322_processor
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Compiling entity cmp
+-- Compiling architecture Dataflow of cmp
+
+} {} {}}

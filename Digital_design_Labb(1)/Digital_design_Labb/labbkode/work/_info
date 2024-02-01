@@ -1,0 +1,475 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Ealu_testbench
+Z0 w1706118027
+Z1 DPx4 work 9 chacc_pkg 0 22 aG`R]BGQOWZH=H;B=ETFZ3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 764
+Z7 dC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode
+Z8 8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_testbench.vhd
+Z9 FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_testbench.vhd
+l0
+L13 1
+VDoN5X=5X8VDJ<RLN4dX<X0
+!s100 _oWllKh@^B^a3QDLRBiUT1
+Z10 OV;C;2020.1;71
+33
+Z11 !s110 1706708131
+!i10b 1
+Z12 !s108 1706708131.000000
+Z13 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_testbench.vhd|
+Z14 !s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_testbench.vhd|
+!i113 1
+Z15 o-work work -2008 -explicit
+Z16 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+R6
+Z17 DEx4 work 13 alu_testbench 0 22 DoN5X=5X8VDJ<RLN4dX<X0
+!i122 764
+l108
+Z18 L16 135
+Z19 V1R<kziT_71?69Rl>ATgbg3
+Z20 !s100 fYg?;F@FEljVJBcT[YUOh1
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealu_wrca
+Z21 w1706706296
+Z22 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
+Z23 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
+R5
+R6
+!i122 751
+R7
+Z24 8C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\alu_wRCA.vhd
+Z25 FC:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\alu_wRCA.vhd
+l0
+L5 1
+VCFa;_km>?_3PCB<z@U2E72
+!s100 19m@YaToC>MB2j0ijG56^0
+R10
+32
+Z26 !s110 1706708128
+!i10b 1
+Z27 !s108 1706708128.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\alu_wRCA.vhd|
+Z29 !s107 C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\alu_wRCA.vhd|
+!i113 1
+Z30 o-work work -2002 -explicit
+R16
+Adataflow
+Z31 DEx4 work 10 rotateleft 0 22 RV:ach=HPM^DUnoSE_Rbf2
+Z32 DEx4 work 3 cmp 0 22 W1[hg`8o;9YN5bKAeLXC_0
+Z33 DEx4 work 3 rca 0 22 `9AEZF0_jOcQWRjfd3_HR0
+R22
+R23
+R5
+R6
+DEx4 work 8 alu_wrca 0 22 CFa;_km>?_3PCB<z@U2E72
+!i122 751
+l45
+L16 57
+V96H>EOEKK_32;0AMcS9DB1
+!s100 ozhicg^XQ0la<CKU9f[8:2
+R10
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R30
+R16
+Pchacc_pkg
+R5
+R6
+!i122 752
+Z34 w1706119478
+R7
+8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd
+FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd
+l0
+L4 1
+VaG`R]BGQOWZH=H;B=ETFZ3
+!s100 <GdKie4:mOGodOoRXZ9KQ2
+R10
+32
+R26
+!i10b 1
+R27
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd|
+!s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd|
+!i113 1
+R30
+R16
+Ecmp
+Z35 w1706177812
+R22
+R23
+R5
+R6
+!i122 753
+R7
+Z36 8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd
+Z37 FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd
+l0
+L5 1
+VW1[hg`8o;9YN5bKAeLXC_0
+!s100 7iYm<F5fSVnKeKTf`8:la1
+R10
+32
+R26
+!i10b 1
+R27
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd|
+Z39 !s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd|
+!i113 1
+R30
+R16
+Adataflow
+R22
+R23
+R5
+R6
+R32
+!i122 753
+l12
+L11 4
+VFFd@4NB5o>V>F:^3JLz5c3
+!s100 2Q?ORenia9i6fY^znbajP0
+R10
+32
+R26
+!i10b 1
+R27
+R38
+R39
+!i113 1
+R30
+R16
+Eeda322_processor
+R34
+R5
+R6
+!i122 754
+R7
+8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/EDA322_processor.vhd
+FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/EDA322_processor.vhd
+l0
+L4 1
+V4AKJUG:_YT[DOfE2R=d021
+!s100 e`:VhRgJnj^0TVA]<BA1U2
+R10
+32
+R26
+!i10b 1
+R27
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/EDA322_processor.vhd|
+!s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/EDA322_processor.vhd|
+!i113 1
+R30
+R16
+Efa
+Z40 w1706171542
+R5
+R6
+!i122 755
+R7
+Z41 8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd
+Z42 FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd
+l0
+L4 1
+V1ao01zASigZ[l9STFT2Ra2
+!s100 Y2o[1PUJL0N3]jNDZ@AAV2
+R10
+32
+R26
+!i10b 1
+R27
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd|
+Z44 !s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd|
+!i113 1
+R30
+R16
+Adataflow
+R5
+R6
+Z45 DEx4 work 2 fa 0 22 1ao01zASigZ[l9STFT2Ra2
+!i122 755
+l14
+L13 5
+VVcJ_j]gY3cTYe3PRX[?fa2
+!s100 GGVQ8Pi327`a1:e5PoFnE1
+R10
+32
+R26
+!i10b 1
+R27
+R43
+R44
+!i113 1
+R30
+R16
+Ememory
+R34
+R4
+R5
+R6
+!i122 756
+R7
+8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd
+FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd
+l0
+L8 1
+VBczI`lgD@WFzXLjm]_Dbj3
+!s100 SP:ZhjVTYfN=AN9Yo=8FC3
+R10
+32
+Z46 !s110 1706708129
+!i10b 1
+R27
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd|
+!s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd|
+!i113 1
+R30
+R16
+Emux2
+Z47 w1706119479
+R5
+R6
+!i122 757
+R7
+8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mux2.vhd
+FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mux2.vhd
+l0
+L4 1
+VD=;66FIdZdoGR5cR_YbLe0
+!s100 fhD[=cTFHWH7RlN^_YS7F3
+R10
+32
+R46
+!i10b 1
+Z48 !s108 1706708129.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mux2.vhd|
+!s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mux2.vhd|
+!i113 1
+R30
+R16
+Eproc_bus
+R47
+R1
+R5
+R6
+!i122 758
+R7
+8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd
+FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd
+l0
+L7 1
+VP9e>f5>:VmTC`BiH;3EEX3
+!s100 RMI=PfkVVgRAQjg?zT2>51
+R10
+32
+R46
+!i10b 1
+R48
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd|
+!s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd|
+!i113 1
+R30
+R16
+Eproc_controller
+R47
+R1
+R5
+R6
+!i122 759
+R7
+8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd
+FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd
+l0
+L7 1
+VBVM`>OX6F8>EQMV4cAQX43
+!s100 1bT17]C_5WXX^FXjV>6<^1
+R10
+32
+Z49 !s110 1706708130
+!i10b 1
+R48
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd|
+!s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd|
+!i113 1
+R30
+R16
+Erca
+Z50 w1706172263
+R5
+R6
+!i122 760
+R7
+Z51 8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd
+Z52 FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd
+l0
+L4 1
+V`9AEZF0_jOcQWRjfd3_HR0
+!s100 QK=PY:h7cE9W_ZjPObBo_3
+R10
+32
+R49
+!i10b 1
+Z53 !s108 1706708130.000000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd|
+Z55 !s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd|
+!i113 1
+R30
+R16
+Adataflow
+R45
+R5
+R6
+R33
+!i122 760
+l25
+L13 21
+VE11X^jQT]f5`L0P0jFB>02
+!s100 ?1OWf_OJZGE`IPoZm?Wln1
+R10
+32
+R49
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R30
+R16
+Ereg
+R47
+R5
+R6
+!i122 761
+R7
+8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd
+FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd
+l0
+L4 1
+V[;5bb:C<^E@Xf6Iz053UQ3
+!s100 Pf3N?1`D`c_4H1T`oc:1]3
+R10
+32
+R49
+!i10b 1
+R53
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd|
+!s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd|
+!i113 1
+R30
+R16
+Erotateleft
+Z56 w1706689678
+R5
+R6
+!i122 763
+R7
+Z57 8C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\rotateleft.vhd
+Z58 FC:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\rotateleft.vhd
+l0
+L4 1
+VRV:ach=HPM^DUnoSE_Rbf2
+!s100 hSHIbVje[D9PMdlG`=j`z3
+R10
+32
+R11
+!i10b 1
+R12
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\rotateleft.vhd|
+Z60 !s107 C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\rotateleft.vhd|
+!i113 1
+R30
+R16
+Adataflow
+R5
+R6
+R31
+!i122 763
+l11
+L10 4
+V_a8<gEJW3Mz4NF[ERk21N2
+!s100 Do]?C4h7VEefG:zY@[b7@2
+R10
+32
+R11
+!i10b 1
+R12
+R59
+R60
+!i113 1
+R30
+R16
+Etutorial_lab
+Z61 w1705528586
+R5
+R6
+!i122 0
+R7
+Z62 8C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/tutorial_lab.vhd
+Z63 FC:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/tutorial_lab.vhd
+l0
+L4 1
+VOF[ge32K<V2Vd7O8R;AY`2
+!s100 HnAZXXZ]:OFQ5B_1nWP=h1
+R10
+32
+Z64 !s110 1705562345
+!i10b 1
+Z65 !s108 1705562345.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/tutorial_lab.vhd|
+Z67 !s107 C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/tutorial_lab.vhd|
+!i113 1
+R30
+R16
+Abehavioral
+R5
+R6
+DEx4 work 12 tutorial_lab 0 22 OF[ge32K<V2Vd7O8R;AY`2
+!i122 0
+l26
+L15 41
+V:lSaoCb4e7PePF@l=dGG[2
+!s100 XcihcnClc<]1YQkgAfndB2
+R10
+32
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R30
+R16
