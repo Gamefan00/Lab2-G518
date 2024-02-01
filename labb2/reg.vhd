@@ -12,3 +12,19 @@ entity reg is
     );
 end entity reg;
 
+ARCHITECTURE behaviora OF reg IS 
+BEGIN
+
+  PROCESS ( clk , resetn ) 
+  BEGIN
+    
+    IF resetn = '0' THEN
+    	dataOut <= (OTHERS => '0');
+    ELSIF rising_edge(clk)THEN --(rising_edge(clk) AND loadEnable='1')
+	IF loadEnable='1' THEN
+		dataOut <= dataIn ; 
+	END IF;
+    END IF ;
+
+  END PROCESS ; 
+END behaviora;
