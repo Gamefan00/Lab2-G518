@@ -17,6 +17,11 @@ entity proc_bus is
 end proc_bus;
 
 ARCHITECTURE behaviora OF proc_bus IS 
+
+SIGNAL deco_out:STD_LOGIC_VECTOR(3 downto 0);
+SIGNAL Sel:STD_LOGIC_VECTOR(1 downto 0);
+SIGNAL out_pt:STD_LOGIC_VECTOR(7 downto 0);
+
 BEGIN
     -- BUS states
     --subtype bsel_t is std_logic_vector(1 downto 0);
@@ -40,14 +45,14 @@ with deco_out SELECT
 	              dmDataOut WHEN "0010",
 		         accOut WHEN "0100",
 		          extIn WHEN "1000",
-	                 "ZZZZ" WHEN OTHERS;
-
-  PROCESS ( clk ) 
-  BEGIN
+	             "ZZZZZZZZ" WHEN OTHERS;
+--busOut <= out_pt
+--  PROCESS ( clk ) 
+--  BEGIN
     
-    IF rising_edge(clk)THEN
+--    IF rising_edge(clk)THEN
 	 
-    END IF;
+--    END IF;
 
-  END PROCESS ; 
+--  END PROCESS ; 
 END behaviora;
