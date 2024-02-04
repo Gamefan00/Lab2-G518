@@ -1,0 +1,56 @@
+restart -f -nowave
+add wave decoEnable decoSel imDataOut dmDataOut accOut busOut
+
+force decoEnable 0 0
+force decoSel 2'b00
+
+force imDataOut 8'b00000001
+force dmDataOut 8'b00000011
+force accOut 8'b11000000
+force busOut 8'b00111000
+run 200ns
+
+force decoEnable 1 1
+force decoSel 2'b00
+
+force imDataOut 8'b00000001
+force dmDataOut 8'b00000011
+force accOut 8'b11000000
+force busOut 8'b00111000
+run 200ns
+
+force decoEnable 1 1
+force decoSel 2'b01
+
+force imDataOut 8'b00000001
+force dmDataOut 8'b00000011
+force accOut 8'b11000000
+force busOut 8'b00111000
+run 200ns
+
+force decoEnable 1 1
+force decoSel 2'b10
+
+force imDataOut 8'b00000001
+force dmDataOut 8'b00000011
+force accOut 8'b11000000
+force busOut 8'b00111000
+run 200ns
+
+force decoEnable 1 1
+force decoSel 2'b11
+
+force imDataOut 8'b00000001
+force dmDataOut 8'b00000011
+force accOut 8'b11000000
+force busOut 8'b00111000
+run 200ns
+
+force decoEnable 0 0
+force decoSel 2'b11
+
+force imDataOut 8'b00000001
+force dmDataOut 8'b00000011
+force accOut 8'b11000000
+force busOut 8'b00111000
+run 200ns
