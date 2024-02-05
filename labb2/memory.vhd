@@ -8,7 +8,7 @@ use std.textio.ALL;
 entity memory is
     generic (DATA_WIDTH : integer := 8;
              ADDR_WIDTH : integer := 8;
-             INIT_FILE : string := "d_memory_lab2.mif");
+             INIT_FILE : string := "memory.mif");
     port (
         clk     : in std_logic;
         readEn    : in std_logic;
@@ -18,45 +18,3 @@ entity memory is
         dataOut : out std_logic_vector(DATA_WIDTH-1 downto 0)
     );
 end entity;
-
-ARCHITECTURE behaviora OF memory IS 
-
-type MEMORY_ARRAY is ARRAY ( 0 TO (2**ADDR_WIDTH)-1) of std_logic_vector((DATA_WIDTH - 1) DOWNTO 0 );
-
-impure function init_memory_wfile(mif_file_name : in string) return MEMORY_ARRAY is
-    file mif_file : text open read_mode is mif_file_name;
-    variable mif_line : line;
-    variable temp_bv : bit_vector(DATA_WIDTH-1 downto 0);
-    variable temp_mem : MEMORY_ARRAY;
-begin
-    for i in MEMORY_ARRAY'range loop
-        readline(mif_file, mif_line);
-        read(mif_line, temp_bv);
-        temp_mem(i) := to_stdlogicvector(temp_bv);
-    end loop;
-    return temp_mem;
-end function;
-
-SIGNAL Mem_arr: MEMORY_ARRAY := init_memory_wfile(INIT_FILE);
-
-BEGIN
---type MEMORY_ARRAY is ARRAY (<number_of_entries>) of <data_type>(<data_size>);
-
--- Mem_arr(to_integer(unsigned(ADDR)))
-  PROCESS ( clk ) 
-  BEGIN
-	IF rising_edge(clk) THEN
-	  IF readEn = '1' THEN 
-		dataOut <= Mem_arr(to_integer(unsigned(address)));
-	  ELSE 
-		dataOut <= (OTHERS => 'Z');
-	  END IF;
-	  
-	  IF writeEn = '1' THEN
-		Mem_arr(to_integer(unsigned(address))) <= dataIn;
-	  END IF;
-		
-	END IF;
-
-  END PROCESS ; 
-END behaviora;
