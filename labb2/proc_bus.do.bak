@@ -52,5 +52,5 @@ force decoSel 2'b11
 force imDataOut 8'b00000001
 force dmDataOut 8'b00000011
 force accOut 8'b11000000
-force extIn 8'b00111000
+force busOut 8'b00111000
 run 200ns

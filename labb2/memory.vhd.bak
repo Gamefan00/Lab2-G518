@@ -41,6 +41,7 @@ SIGNAL Mem_arr: MEMORY_ARRAY := init_memory_wfile(INIT_FILE);
 
 BEGIN
 --type MEMORY_ARRAY is ARRAY (<number_of_entries>) of <data_type>(<data_size>);
+
 -- Mem_arr(to_integer(unsigned(ADDR)))
   PROCESS ( clk ) 
   BEGIN

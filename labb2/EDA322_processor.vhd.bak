@@ -119,7 +119,6 @@ with pcSel SELECT
 	nextPC <= pclncrOut WHEN "0"
 		  jumpAddr  WHEN "1"
 		 "ZZZZZZZZ" WHEN OTHERS;
-
 reg_pc: entity work.reg PORT MAP(,,,,); -- vad händer med carryin?
 
 

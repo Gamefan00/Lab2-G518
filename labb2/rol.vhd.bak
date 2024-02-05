@@ -6,7 +6,3 @@ entity rotateleft is
     	    r: out  std_logic_vector (7 downto 0)
    	);
 end rotateleft;
-ARCHITECTURE Dataflow OF rotateleft IS
-BEGIN
-	r <= a(6 DOWNTO 0)&a(7);
-END Dataflow;

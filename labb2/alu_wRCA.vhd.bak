@@ -64,9 +64,8 @@ with alu_op SELECT
 	          and_out WHEN "01",
 	              sum WHEN OTHERS; -- "10" "11"
 
-Z <= '1' WHEN op_out = "00000000" ELSE '0';
-
 alu_out <= op_out; -- kan inte jämföra alu_out med noll
+Z <= '1' WHEN op_out = "00000000" ELSE '0';
 --if op = "0" then Z <=1;
 
 END Dataflow;

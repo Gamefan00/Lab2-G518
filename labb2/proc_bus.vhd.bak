@@ -46,5 +46,13 @@ with deco_out SELECT
 		         accOut WHEN "0100",
 		          extIn WHEN "1000",
 	             "ZZZZZZZZ" WHEN OTHERS;
+--busOut <= out_pt
+--  PROCESS ( clk ) 
+--  BEGIN
+    
+--    IF rising_edge(clk)THEN
+	 
+--    END IF;
 
+--  END PROCESS ; 
 END behaviora;
