@@ -77,6 +77,19 @@ COMPONENT reg
     );
 end COMPONENT;
 
+COMPONENT memory 
+    generic (DATA_WIDTH : integer := 8;
+             ADDR_WIDTH : integer := 8;
+             INIT_FILE : string := "d_memory_lab2.mif");
+    port (
+        clk     : in std_logic;
+        readEn    : in std_logic;
+        writeEn   : in std_logic;
+        address : in std_logic_vector(ADDR_WIDTH-1 downto 0);
+        dataIn  : in std_logic_vector(DATA_WIDTH-1 downto 0);
+        dataOut : out std_logic_vector(DATA_WIDTH-1 downto 0)
+    );
+end COMPONENT;
 
 SIGNAL op_out:STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL addOrSub:std_logic;
@@ -86,9 +99,19 @@ SIGNAL jumpAddr:STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL add_inp:STD_LOGIC_VECTOR(7 downto 0);
 
 
-SIGNAL busOut:STD_LOGIC_VECTOR(7 downto 0);
 SIGNAL nextPC:STD_LOGIC_VECTOR(7 downto 0);
+SIGNAL pcSel:std_logic;
+SIGNAL pcLd:std_logic;
 SIGNAL pcOut:STD_LOGIC_VECTOR(7 downto 0);
+
+SIGNAL imRead:std_logic;
+SIGNAL imDataOut:STD_LOGIC_VECTOR(11 downto 0);
+SIGNAL opcode:STD_LOGIC_VECTOR(3 downto 0); --eller 2 downto 0
+
+SIGNAL decoEnable:STD_LOGIC_VECTOR(1 downto 0);
+SIGNAL decoSel:STD_LOGIC_VECTOR(1 downto 0);
+SIGNAL accOut:STD_LOGIC_VECTOR(7 downto 0);
+SIGNAL busOut:STD_LOGIC_VECTOR(7 downto 0);
 
 BEGIN
 
@@ -102,25 +125,37 @@ mock_controller_I: entity work.mock_controller PORT MAP(
 		aluOp,flagLd, -- select ALU operation, select look at flags
 		accSel, -- select output from ALU or BUS
 		accLd, dsLd); -- Enable ACC reg, Enable DS reg
-bus_I: entity work.proc_bus PORT MAP(,,,,busOut);
 
 addOrSub <= busOut(7);
 	
 	with busOut(7) SELECT
 	add_inp <= NOT('0' & busOut(6 DOWNTO 0)) WHEN "1", -- Negerar detta hela talet bitvis ?
 		  '0' & busOut(6 DOWNTO 0) WHEN "0",
-	                        "ZZZZZZZZ" WHEN OTHERS; -- denna behövs nog inte
+	                        "ZZZZZZZZ" WHEN OTHERS; -- denna behÃ¶vs nog inte
 
 
-rca_jump: entity work.rca PORT MAP(pcOut,add_inp,addOrSub,C,jumpAddr); -- vad händer med carryin?
-rca_pclncr: entity work.rca PORT MAP(pcOut,"00000001",'0',C,pclncrOut); -- vad händer med carryin?
+rca_jump: entity work.rca PORT MAP(pcOut,add_inp,addOrSub,C,jumpAddr); -- vad hÃ¤nder med carryin?
+rca_pclncr: entity work.rca PORT MAP(pcOut,"00000001",'0',C,pclncrOut); -- vad hÃ¤nder med carryin?
 
 with pcSel SELECT 
 	nextPC <= pclncrOut WHEN "0"
 		  jumpAddr  WHEN "1"
 		 "ZZZZZZZZ" WHEN OTHERS;
 
-reg_pc: entity work.reg PORT MAP(clk,,,,); -- vad händer med carryin?
+reg_pc: entity work.reg PORT MAP(clk,,pcLd,nextPC,pcOut); -- vad hÃ¤nder restn?
+pc2steg <= pcOut; -- dessa 2steg outputs, ska vi bara inputta vÃ¤rden?
 
+mem_INS: entity work.memory 
+generic map (DATA_WIDTH => 8;
+             ADDR_WIDTH =>12;
+             INIT_FILE => "i_memory_lab2.mif");) 
+	     PORT MAP(clk,imRead,'0',pcOut,"00000000",imDataOut);
+
+imDataOut2seg <= imDataOut;
+opcode <= imDataOut(11 DOWNTO 8);
+
+bus_THE: entity work.proc_bus PORT MAP(decoEnable,decoSel,imDataOut(7 DOWNTO 0),dmDataOut,accOut,extIn,busOut);
+
+busOut2seg <= busOut
 
 END Dataflow;
