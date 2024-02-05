@@ -120,7 +120,7 @@ with pcSel SELECT
 		  jumpAddr  WHEN "1"
 		 "ZZZZZZZZ" WHEN OTHERS;
 
-reg_pc: entity work.reg PORT MAP(,,,,); -- vad händer med carryin?
+reg_pc: entity work.reg PORT MAP(clk,,,,); -- vad händer med carryin?
 
 
 END Dataflow;
