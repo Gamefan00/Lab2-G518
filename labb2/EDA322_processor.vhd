@@ -21,7 +21,7 @@ end EDA322_processor;
 
 ARCHITECTURE Dataflow OF EDA322_processor IS
 
-COMPONENT mock_controller
+COMPONENT proc_controller
     port (
         clk: in std_logic;
         resetn: in std_logic;
@@ -117,7 +117,7 @@ SIGNAL pcOut:STD_LOGIC_VECTOR(7 downto 0);
 -- Instruction Memory
 SIGNAL imRead:std_logic;
 SIGNAL imDataOut:STD_LOGIC_VECTOR(11 downto 0);
-SIGNAL opcode:STD_LOGIC_VECTOR(3 downto 0); --eller 2 downto 0
+SIGNAL opcode:STD_LOGIC_VECTOR(3 downto 0);
 
 -- Bus
 SIGNAL decoEnable:std_logic;
@@ -155,7 +155,7 @@ SIGNAL dsLd:std_logic;
 
 BEGIN
 
-mock_cont: entity work.mock_controller PORT MAP(
+mock_cont: entity work.proc_controller PORT MAP(
 		clk,resetn,master_load_enable, opcode,e_flag,z_flag, -- inputs to controller
 		
 		decoEnable, decoSel, --outputs to controll bus
@@ -189,7 +189,7 @@ pc2seg <= pcOut; -- dessa 2steg outputs, ska vi bara inputta värden?
 mem_INS: entity work.memory 
 generic map (DATA_WIDTH =>12,
              ADDR_WIDTH =>8,
-             INIT_FILE => "i_memory_lab2.mif") 
+             INIT_FILE => "i_memory_lab3.mif") 
 	     PORT MAP(clk,imRead,'0',pcOut,"000000000000",imDataOut);
 
 imDataOut2seg <= imDataOut;
