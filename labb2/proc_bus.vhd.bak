@@ -8,8 +8,8 @@ entity proc_bus is
     port (
         decoEnable : in std_logic;
         decoSel    : in std_logic_vector(1 downto 0);
-        imDataOut   : in std_logic_vector(7 downto 0);
-        dmDataOut     : in std_logic_vector(7 downto 0);
+        imDataOut  : in std_logic_vector(7 downto 0);
+        dmDataOut  : in std_logic_vector(7 downto 0);
         accOut     : in std_logic_vector(7 downto 0);
         extIn      : in std_logic_vector(7 downto 0);
         busOut     : out std_logic_vector(7 downto 0)
@@ -31,28 +31,20 @@ BEGIN
     --constant B_EXT  : bsel_t := "11";
 
  -- typ decodern
-Sel <= decoSel WHEN decoEnable = '1' ELSE "ZZ";
+Sel <= decoSel WHEN decoEnable = '1' ELSE "00";
 with Sel SELECT
 	deco_out <= "0001" WHEN B_IMEM,
 	            "0010" WHEN B_DMEM,
 		    "0100" WHEN B_ACC,
 		    "1000" WHEN B_EXT,
-	            "ZZZZ" WHEN OTHERS;
+	            "0000" WHEN OTHERS;
 
 --typ 4:1 multiplexer
-with deco_out SELECT
-	busOut <=     imDataOut WHEN "0001",
-	              dmDataOut WHEN "0010",
-		         accOut WHEN "0100",
-		          extIn WHEN "1000",
-	             "ZZZZZZZZ" WHEN OTHERS;
---busOut <= out_pt
---  PROCESS ( clk ) 
---  BEGIN
-    
---    IF rising_edge(clk)THEN
-	 
---    END IF;
+with deco_out & decoEnable  SELECT
+	busOut <=     imDataOut WHEN "00011",
+	              dmDataOut WHEN "00101",
+		         accOut WHEN "01001",
+		          extIn WHEN "10001",
+	             "00000000" WHEN OTHERS;
 
---  END PROCESS ; 
 END behaviora;

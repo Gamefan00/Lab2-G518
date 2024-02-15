@@ -1,4 +1,4 @@
-C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\chacc_pkg.vhd}
+C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/chacc_pkg.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -12,6 +12,25 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity mux2
 
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package chacc_pkg
+-- Compiling entity proc_bus
+-- Compiling architecture behaviora of proc_bus
+** Warning: C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_bus.vhd(43): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mock_controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/mock_controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package chacc_pkg
+-- Compiling entity mock_controller
+-- Compiling architecture Behavioral of mock_controller
+
 } {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rca.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -21,6 +40,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture Dataflow of rca
 -- Loading entity fa
 
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\proc_controller.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package chacc_pkg
+-- Compiling entity proc_controller
+-- Compiling architecture Behavior of proc_controller
+
 } {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/fa.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -28,14 +57,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity fa
 -- Compiling architecture Dataflow of fa
-
-} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/proc_controller.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package chacc_pkg
--- Compiling entity proc_controller
 
 } {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/memory.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -58,7 +79,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity alu_testbench
 -- Compiling architecture BEHAVIORAL of alu_testbench
 
-} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rotateleft.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rotateleft.vhd
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rotateleft.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\rotateleft.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -66,21 +87,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity rotateleft
 -- Compiling architecture Dataflow of rotateleft
 
-} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rol.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rol.vhd
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/rol.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\rol.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity rotateleft
 -- Compiling architecture Dataflow of rotateleft
-
-} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity reg
--- Compiling architecture behaviora of reg
 
 } {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/alu_wRCA.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\alu_wRCA.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -95,6 +108,32 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading entity cmp
 -- Loading entity rotateleft
 
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture behaviora of reg
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/EDA322_processor.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\EDA322_processor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity EDA322_processor
+-- Compiling architecture Dataflow of EDA322_processor
+-- Loading package NUMERIC_STD
+-- Loading package chacc_pkg
+-- Loading entity proc_controller
+-- Loading entity rca
+-- Loading entity reg
+-- Loading entity memory
+-- Loading entity proc_bus
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading entity alu_wRCA
+
 } {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/cmp.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -104,5 +143,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_misc
 -- Compiling entity cmp
 -- Compiling architecture Dataflow of cmp
+
+} {} {}} C:/Users/HP/OneDrive/Skrivbord/Digital_design_Labb/labbkode/testbenchlab3.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\HP\OneDrive\Skrivbord\Digital_design_Labb\labbkode\testbenchlab3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity EDA322_processor_tb
+-- Compiling architecture test_arch of EDA322_processor_tb
 
 } {} {}}

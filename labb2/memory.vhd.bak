@@ -41,15 +41,12 @@ SIGNAL Mem_arr: MEMORY_ARRAY := init_memory_wfile(INIT_FILE);
 
 BEGIN
 --type MEMORY_ARRAY is ARRAY (<number_of_entries>) of <data_type>(<data_size>);
-
 -- Mem_arr(to_integer(unsigned(ADDR)))
   PROCESS ( clk ) 
   BEGIN
 	IF rising_edge(clk) THEN
 	  IF readEn = '1' THEN 
 		dataOut <= Mem_arr(to_integer(unsigned(address)));
-	  ELSE 
-		dataOut <= (OTHERS => 'Z');
 	  END IF;
 	  
 	  IF writeEn = '1' THEN

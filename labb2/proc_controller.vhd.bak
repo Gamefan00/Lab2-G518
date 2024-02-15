@@ -40,7 +40,7 @@ BEGIN
 		IF resetn = '0' THEN -- Asyncron reset
 		   --OPout <= (OTHERS => '0'); -- behöver?
 	   	   curr_state <= FE;
-		ELSIF (clk'EVENT AND clk = '1' AND master_load_enable = '1') THEN
+		ELSIF (clk'EVENT AND clk = '1' AND master_load_enable) THEN
 		   curr_state <= next_state;
 		END IF;
 
