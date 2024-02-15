@@ -38,7 +38,29 @@ architecture test_arch of EDA322_processor_new is
     SIGNAL aluOut2seg_tb     : std_logic_vector(7 downto 0);
     SIGNAL busOut2seg_tb     : std_logic_vector(7 downto 0);
     SIGNAL ds2seg_tb         : std_logic_vector(7 downto 0);
-    
+	
+    	type vector_array is ARRAY (natural range <>) of std_logic_vector;
+	type MEMORY_ARRAY is ARRAY ( 0 TO (2**ADDR_WIDTH)-1) of std_logic_vector((DATA_WIDTH - 1) DOWNTO 0 );
+
+	impure function init_memory_wfile(mif_file_name : in string) return MEMORY_ARRAY is
+    		file mif_file : text open read_mode is mif_file_name;
+    		variable mif_line : line;
+    		variable temp_bv : bit_vector(DATA_WIDTH-1 downto 0);
+    		variable temp_mem : MEMORY_ARRAY;
+		variable i : integer := 0;
+	begin
+    		while not endfile(mif_file) loop
+        		readline(mif_file, mif_line);
+        		read(mif_line, temp_bv);
+        		temp_mem(i) := to_stdlogicvector(temp_bv);
+			i = i + 1;
+    		end loop;
+    	return temp_mem;
+	end function;
+
+SIGNAL Mem_arr: MEMORY_ARRAY := init_memory_wfile(INIT_FILE);
+    --signal <name> : vector_array(<length>)(<width>) := <initialization>
+
 begin
 
     clk <= not clk after c_CLK_PERIOD/2;
