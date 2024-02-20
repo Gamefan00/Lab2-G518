@@ -8,7 +8,7 @@ use std.textio.ALL;
 entity memory is
     generic (DATA_WIDTH : integer := 8;
              ADDR_WIDTH : integer := 8;
-             INIT_FILE : string := "d_memory_lab3.mif");
+             INIT_FILE : string := "d_memory_lab4.mif");
     port (
         clk     : in std_logic;
         readEn    : in std_logic;
@@ -44,7 +44,7 @@ BEGIN
 -- Mem_arr(to_integer(unsigned(ADDR)))
   PROCESS ( clk ) 
   BEGIN
-	IF rising_edge(clk) THEN
+	IF rising_edge(clk) AND address(0) /= 'U' THEN
 	  IF readEn = '1' THEN 
 		dataOut <= Mem_arr(to_integer(unsigned(address)));
 	  END IF;
